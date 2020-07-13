@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Formats</title>
+    </head>
+
+    <body>
+        <H4>
+            Assignment Question - 3 (Date in Different Format)
+        </H4>
+        <br>
+        <br>
+        <script>
+            var d = new Date();
+            var date = d.getDate();
+            var month = d.getMonth();
+            var year = d.getFullYear();
+            var format1 = date +"-"+ month +"-"+ year;
+            var format2 = date +"/"+ month +"/"+ year;
+            document.write("Date : "+ format1 +" , "+format2);
+        </script>
+    </body>
+</html>

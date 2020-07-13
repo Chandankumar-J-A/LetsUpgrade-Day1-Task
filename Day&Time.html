@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date/Time</title>
+    </head>
+
+    <body>
+        <H4>
+            Assignment Question - 1 (Day and Time)
+        </H4>
+        <br>
+        <script>
+            var d = new Date();
+            var day = new Array(7);
+            day[0] = "Sunday";
+            day[1] = "Monday";
+            day[2] = "Tuesday";
+            day[3] = "Wednesday";
+            day[4] = "Thursday";
+            day[5] = "Friday";
+            day[6] = "Saturday";
+            document.write("Today is : "+day[d.getDay()]);
+        </script>
+        <br>
+        <br>
+        <script>
+            var d = new Date();
+            var hours = d.getHours();
+            var minutes = d.getMinutes();
+            var seconds = d.getSeconds();
+            var ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            var time = hours+" "+ampm+' : '+ minutes +' : '+ seconds;
+            document.write("\n"+"Current Time is : "+time );
+            
+        </script>
+    </body>
+</html>
